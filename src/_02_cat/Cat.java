@@ -29,6 +29,11 @@ public class Cat {
 	void meow() {
 		System.out.println("meeeeeooooooooooowwwwwwwww!!");
 	}
+	
+	public int getLives() {
+		
+		return this.lives;
+	}
 
 	public void printName() {
 		if (name == null)
