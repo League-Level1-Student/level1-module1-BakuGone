@@ -9,14 +9,21 @@ public class RaceCarRunner {
 		/* Do the following things without changing the RaceCar class */
 		
 		// 1. Create a RaceCar and place it in 5th position
-		new RaceCar (null, 5);
+		RaceCar x = new RaceCar (null, 5);
 		// 2. Print the RaceCar's position in the race
-		System.out.print("You're number 5 in the race!");
+		System.out.println("Your car in " + x.getPositionInRace() +  "th place");
 		// 3. Crash the RaceCar
-		
+		x.crash();
 		// 4. If the car is damaged. Bring it in for a pit stop.
-
+		if(x.isDamaged() == true) {
+			
+			x.pit();
+		}
 		// 5. Help the car move into first place.
-
+		while(x.getPositionInRace() > 1) {
+			
+			x.overtake();
+		}
+		
 	}
 }
