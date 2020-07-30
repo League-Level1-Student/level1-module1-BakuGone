@@ -1,5 +1,7 @@
 package _06_duck;
 
+import javax.swing.JOptionPane;
+
 public class PurpleMonkey {
 	
 	public String favoriteCountry;
@@ -7,7 +9,7 @@ public class PurpleMonkey {
 	
 	PurpleMonkey(String favoriteCountry, int numberOfPurpleBananas) {
 		
-		System.out.println("Your purple monkey's favorite country is " + favoriteCountry + " and they have " + numberOfPurpleBananas + " purple bananas to eat.");
+		JOptionPane.showMessageDialog(null, "Your purple monkey's favorite country is " + favoriteCountry + " and they have " + numberOfPurpleBananas + " purple bananas to eat.");
       	this.favoriteCountry = favoriteCountry;
       	this.numberOfPurpleBananas = numberOfPurpleBananas;
 
@@ -15,11 +17,11 @@ public class PurpleMonkey {
 	
 	void eatBananas() {
 		
-		System.out.println("I just ate " + numberOfPurpleBananas + " purple bananas I feel sick...");
+		JOptionPane.showMessageDialog(null, "I just ate " + numberOfPurpleBananas + " purple bananas I feel sick...");
 	}
 		
 	void screech() {
 			
-		System.out.println("RRRREEEEEEEEEEEEEEEEEEE");
+		JOptionPane.showMessageDialog(null, "RRRREEEEEEEEEEEEEEEEEEE");
 	}
 }
